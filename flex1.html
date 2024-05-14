@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arraging Items</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque accusantium sunt laborum similique facere nihil itaque consequuntur impedit vel magnam deserunt quaerat quidem autem delectus repellendus, non atque voluptates quisquam.</div>
+        <div class="inner">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi natus voluptas, esse mollitia consequatur pariatur. Perferendis culpa distinctio dolorum quisquam consectetur nemo ex dignissimos ullam? Fugiat, iste cumque. Voluptate, debitis?</div>
+        <div class="inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia a at consequuntur possimus quam eius fugit atque delectus, enim itaque aperiam sit! Dolore sequi distinctio dicta, cupiditate officiis ex exercitationem.</div>
+
+        <style>
+           
+            *{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+
+            .container{
+                display: flex;
+                justify-content: space-evenly                                 ;
+                /*background: grey;*/
+                border: 1px solid rgb(9, 9, 8);
+                margin: 16px;
+                padding-top: 10px;
+                min-height: 400px;
+                /*display: none;*/
+                display: none;
+            }
+
+            .inner{
+                width: 30%;
+                border: 1px solid grey;
+                display: none;
+            }
+
+            .container-2{
+                display: flex;
+                border: 1px solid rgb(9, 9, 8);
+                justify-content: flex-end;
+                display: none;
+            }
+
+            .smaller{
+                width: 25%;
+                border: 1px solid rgb(9, 9, 8);
+                
+            }
+
+            .container-3{
+                border: 1px solid rgb(9, 9, 8);
+                margin-top: 16px;
+                margin-right: 16px;
+                margin-left: 16px;
+                min-height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .xyz{
+                width: 150px;
+                height: 150px;
+                border: 1px solid rgb(9, 9, 8);
+            }
+
+        </style>
+
+    </div>
+
+    <div class="container-2">
+        <div class="smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel in delectus eum commodi vitae. Porro excepturi, eos sunt reiciendis voluptate error necessitatibus harum temporibus odit deleniti in dolorem numquam ratione?</div>
+        <div class="smaller">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At omnis asperiores a tenetur labore eum expedita, laborum ex in nihil, ipsa vitae rerum molestias iure architecto voluptate dolore sint quod.</div>
+    </div>
+    <div class="container-3">
+        <div class="xyz">Hello</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <title>Forms</title>
+    <style>
+        form {
+            width: 30%;
+            margin: auto;
+            box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+            padding: 10px 16px;
+        }
+
+        input {
+            width: 100%;
+            margin-bottom: 16px;
+            margin-top: 0px;
+            padding: 12px 15px;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1px solid green;
+        }
+
+        input focus+label {
+            color: red;
+        }
+
+        button {
+            width: 20%;
+            padding: 0%;
+            background-color: rgb(108, 238, 9);
+            border: none;
+            color: aliceblue;
+            transition: all 0.4s ease;
+            size: 4cm 2cm;
+        }
+
+        button:hover {
+            background: rgb(1, 60, 1);
+        }
+
+        @media screen and (max-width: 600px) {
+            form {
+                width: 90%;
+            }
+        }
+
+        button {
+            background: black;
+        }
+
+        @media screen and (601px<=width <=800px) {
+            form {
+                width: 60%;
+            }
+
+            button {
+                background: rgb(182, 4, 4);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <div>
+            <label>Full Name</label>
+            <input type="text" required placeholder="John Kim" maxlength="30">
+        </div>
+
+        <div>
+            <label>Email</label>
+            <input type="email" required placeholder="johnkim@gmail.com">
+        </div>
+        <div>
+            <label>Phone</label>
+            <input type="tel">
+        </div>
+
+        <div>
+            <label>DOB</label>
+            <input type="date">
+        </div>
+
+        <div>
+            <label>Password</label>
+            <input type="password">
+        </div>
+
+        <button>Submit</button>
+    </form>
+
+</body>
+
+</html>

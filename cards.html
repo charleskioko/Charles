@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+         *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            
+         }
+
+         .container{
+            margin: 50px auto;
+            width: 90%;
+            display: flex;
+            justify-content: space-around;
+            flex-flow: wrap;
+         }
+
+         .card{
+            width: 20%;
+            font-family: sans-serif;
+            border: 1px solid #ccc;
+            background: rgb(236, 236, 236);
+            border-radius: 16px;
+           
+        
+         }
+
+         .card-header{
+            text-align: center;
+            padding: 50px 10px;
+            background: yellowgreen;
+            color: white;
+            border-radius: 16px;
+
+         }
+
+         .card-body{
+            padding: 30px 10px;
+            text-align: left;
+            font-size: 0.9rem;
+            font-weight: 500;
+         }
+
+         @media screen and (max-width: 1000px) {
+            .card{
+                width: 40%;
+                margin-top: 5%;
+            }
+         }
+
+         @media screen and (max-width: 620px) {
+            .card{
+                width: 80%;
+            }
+            
+         }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="card-header">
+                <h1>CSS</h1>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet est fugiat dignissimos, nulla inventore pariatur doloribus quaerat exercitationem esse culpa ipsam corporis incidunt dolores sapiente. Quaerat expedita eligendi tenetur dolore!</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h1>DJANGO</h1>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet est fugiat dignissimos, nulla inventore
+                    pariatur doloribus quaerat exercitationem esse culpa ipsam corporis incidunt dolores sapiente. Quaerat
+                    expedita eligendi tenetur dolore!</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h1>PYTHON</h1>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet est fugiat dignissimos, nulla inventore
+                    pariatur doloribus quaerat exercitationem esse culpa ipsam corporis incidunt dolores sapiente. Quaerat
+                    expedita eligendi tenetur dolore!</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h1>HTML</h1>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet est fugiat dignissimos, nulla inventore
+                    pariatur doloribus quaerat exercitationem esse culpa ipsam corporis incidunt dolores sapiente. Quaerat
+                    expedita eligendi tenetur dolore!</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

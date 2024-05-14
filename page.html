@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap");
+/* -----Reset----- */
+         *{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+                font-family: "Roboto", sans-serif;
+            }
+            nav{
+                background: black;
+            }
+
+            nav .container{
+                width: 80%;
+                margin: auto;
+                color: azure;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 0;
+            }
+
+            nav h2{
+                font-weight: 600;
+            }
+            nav ul{
+                list-style-type: none;
+                display: flex;
+            }
+
+            nav li{
+                padding: 10px;
+            }
+
+            nav li a{
+                text-decoration: none;
+                color: azure;
+                transition: 0.4s;
+            }
+            
+            nav li a:hover{
+
+                color: brown;
+                font-size: 1.3rem;
+            }
+
+            .hero{
+                height: 80vh;
+                background-image:
+                linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(17, 119, 93, 0.73))                          
+                ,url("bg.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: rgb(13, 1, 1);
+            }
+             .hero div{
+                width: 70%;
+            }
+            .hero h1{
+                font-size: 4rem;
+                margin-bottom: 15px;
+                font-weight: 700;
+            }
+
+            .hero p{
+                font-weight: 400;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                /*text-align: center;*/
+            }
+
+            @media screen and (max-width:600px){
+                nav .container{
+                    flex-direction: column;
+                }  
+            }
+            
+            /* Credit Text */
+        footer .credit {
+        text-align: right;
+        color: #000;
+        font-size: 0.9rem;
+        padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<nav>
+    <div class="container">
+        <h2>lesKi Land</h2>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Contacts</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<section class="hero">
+    <div>
+        <h1>Welcome</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime amet accusamus consequatur? Eos incidunt, asperiores maxime, esse quas ullam ratione fuga accusamus alias nesciunt molestiae provident quibusdam, veniam fugit eligendi!</p>
+    </div>
+
+</section>
+    <footer>
+        <div class="credit">
+            <p>Copyright © 2024 - lesKi</p>
+            <p>Designed & Developed by Charles Kioko</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
